@@ -1,13 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import App from './components/App'
 
 function Lol(){
   return(
     <>
-      <div>
-        Hello
-      </div>
+      <App></App>
     </>
   )
 }

@@ -1,0 +1,7 @@
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1170px;
+    justify-content: space-between;
+}

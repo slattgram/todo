@@ -13,10 +13,12 @@ const TodoList = ({data}) =>{
                     data.map((e)=>{
                         return(
                         <Todo 
+                            key={e.id}
                             body={e.body}
                             head={e.head}
                             deadline={e.deadline}
                             urgency={e.urgency}
+                            marginRight={e.id % 3 === 0 ? true : false}
                         />
                         )
                     })

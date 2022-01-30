@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 .card{
-    height: 229px;
     width: 370px;
     background-color: #fdfdff;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    margin-bottom: 30px;
 }
+
+
 .card-head{
     background-color: #322D2D;
     border-radius: 10px 10px 0px 0px;
@@ -16,5 +18,67 @@
     font-weight: 500;
     font-size: 22px;
     line-height: 27px;
+    color: #FDFDFF;
+
+}
+.card-body{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    min-height: 53px;
+}
+.card-footer{
+    border-top: 1px solid #B5B5B5;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-footer-deadline-container{
+    margin: 15px 10px 15px 20px;
+    background: #6FCF97;
+    border-radius: 100px;
+    max-height: 30px; 
+    display: flex;
+    flex-direction: row;  
+}
+
+.card-footer-deadline-icon{
+    height: 22px;
+    width: 22px;
+    margin: 4px 8px 4px 10px;
+}
+
+.card-footer-deadline-text{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 2px;
+    margin-right: 10px;
+    color: #FDFDFF;
+}
+
+
+.card-footer-urgency-container{
+    
+    background: #96D4CC;
+    border-radius: 100px;
+    max-height: 30px;
+    margin: 15px auto 15px 0;
+}
+.card-footer-urgency-text{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 4px 15px 4px 15px;
     color: #FDFDFF;
 }

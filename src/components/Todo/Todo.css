@@ -82,3 +82,13 @@
     margin: 4px 15px 4px 15px;
     color: #FDFDFF;
 }
+
+.card-footer-button-complete{
+    outline: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background: #1C77E3;
+    margin: 15px 20px auto auto;
+    border-radius: 100px;
+}

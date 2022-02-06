@@ -1,8 +1,14 @@
 import React from "react";
 import './Todo.css'
 import imgUrgency from './img-urgency.svg'
+import imgDone from './img-done.svg'
 
 const Todo = ({head,body,urgency,deadline,marginRight}) =>{
+
+
+
+
+
 
     let style = {
 
@@ -28,7 +34,7 @@ const Todo = ({head,body,urgency,deadline,marginRight}) =>{
                 </div>
                 <div className="card-footer">
                     <div className="card-footer-deadline-container">
-                        <img className="card-footer-deadline-icon" src={imgUrgency}/>
+                        <img className="card-footer-deadline-icon" src={imgUrgency} alt=""/>
                         <div className="card-footer-deadline-text">
                             {deadline}
                         </div>
@@ -41,6 +47,12 @@ const Todo = ({head,body,urgency,deadline,marginRight}) =>{
                             {urgency}
                         </div>
                     </div>
+                    <button 
+                        className="card-footer-button-complete"
+                        
+                    >
+                        <img src={imgDone} alt="" />
+                    </button>
                 </div>
                 
             </div>

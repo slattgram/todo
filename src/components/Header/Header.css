@@ -1,0 +1,13 @@
+.header-text{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+}
+.header-wrapper{
+    margin-top: 45px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}

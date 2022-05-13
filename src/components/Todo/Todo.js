@@ -1,31 +1,18 @@
-import React from "react";
+import React,{useState} from "react";
 import './Todo.css'
 import imgUrgency from './img-urgency.svg'
 import imgDone from './img-done.svg'
+import TodoOpen from "../TodoOpen/TodoOpen";
 
 const Todo = ({head,body,urgency,deadline,marginRight}) =>{
 
+    const [isOpen, setIsOpen] = useState(false)
 
 
-
-
-
-    let style = {
-
-    }
-    if (marginRight){
-        style={
-            marginRight: '0px'
-        }
-    }else{
-        style={
-            marginRight: '30px'
-        }
-    }
 
     return(
         <> 
-            <div className="card" style={style}>
+            <div className="card">
                 <div className="card-head">
                     {head}
                 </div>
@@ -49,7 +36,7 @@ const Todo = ({head,body,urgency,deadline,marginRight}) =>{
                     </div>
                     <button 
                         className="card-footer-button-complete"
-                        
+                        onClick={()=>setIsOpen(!isOpen)}
                     >
                         <img src={imgDone} alt="" />
                     </button>
@@ -57,6 +44,17 @@ const Todo = ({head,body,urgency,deadline,marginRight}) =>{
                 
             </div>
             
+            {isOpen ? 
+            <TodoOpen 
+                isOpen={isOpen} 
+                setIsOpen={setIsOpen}
+                name={head}
+                description={body}
+                deadline={deadline}
+                priority={urgency}
+                status="pending"
+            />
+             : null}
         </>
     )
 }

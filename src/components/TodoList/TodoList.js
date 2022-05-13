@@ -18,7 +18,6 @@ const TodoList = ({data}) =>{
                             head={e.head}
                             deadline={e.deadline}
                             urgency={e.urgency}
-                            marginRight={e.id % 3 === 0 ? true : false}
                         />
                         )
                     })

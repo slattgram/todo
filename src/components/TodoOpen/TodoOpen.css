@@ -1,0 +1,50 @@
+.todo-open-overlay{
+    
+    position: absolute; 
+    opacity: 1;
+    left: 0; 
+    right: 0; 
+    top:0;
+    bottom:0;
+    margin : auto;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.todo-open-container{
+    z-index: 1;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    top:0;
+    bottom:0;
+    margin : auto;
+    width: 95vw;
+    height: 85vh;
+    background: #FDFDFF;
+    border-radius: 10px;
+
+}
+.todo-open-header-container-name{
+    display: flex;
+    flex-direction: row;
+    margin-top:12px;
+}
+.todo-open-header-clipboard{
+    margin: 0 15px auto 12px;
+}
+.todo-open-header-name{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+}
+.todo-open-header-close{
+    margin: 0 12px auto 15px;
+}
+.todo-open-header-container-minis{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

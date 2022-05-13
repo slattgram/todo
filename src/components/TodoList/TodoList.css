@@ -2,9 +2,8 @@
     
     margin-top: 60px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 1170px;
     margin-right: auto;
     margin-left: auto;
 }
